@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14f50c3e-f8c4-4c65-8406-6088c914ea01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sort/349.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sort/922.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sort/349.py">
+        <entry file="file://$PROJECT_DIR$/sort/922.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="169">
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -52,6 +52,7 @@
         <option value="$PROJECT_DIR$/heap/215.py" />
         <option value="$PROJECT_DIR$/greedy_Algorithm/1221.py" />
         <option value="$PROJECT_DIR$/sort/349.py" />
+        <option value="$PROJECT_DIR$/sort/922.py" />
       </list>
     </option>
   </component>
@@ -161,12 +162,12 @@
       <workItem from="1572861088996" duration="2526000" />
       <workItem from="1573018692783" duration="51000" />
       <workItem from="1573034767875" duration="3955000" />
-      <workItem from="1573124027001" duration="2428000" />
+      <workItem from="1573124027001" duration="2770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8960000" />
+    <option name="totallyTimeSpent" value="9302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -310,8 +311,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sort/349.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="410">
+          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort/922.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
