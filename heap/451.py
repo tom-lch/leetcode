@@ -17,6 +17,7 @@
 链接：https://leetcode-cn.com/problems/sort-characters-by-frequency
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 """
+# 使用python做题不太合适
 class Solution:
     def frequencySort(self, s: str) -> str:
         S = ''
