@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14f50c3e-f8c4-4c65-8406-6088c914ea01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stack/844.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heap/1046.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stack/844.py">
+        <entry file="file://$PROJECT_DIR$/heap/1046.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="252">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -46,6 +46,7 @@
         <option value="$PROJECT_DIR$/stack/225.py" />
         <option value="$PROJECT_DIR$/stack/115.py" />
         <option value="$PROJECT_DIR$/stack/844.py" />
+        <option value="$PROJECT_DIR$/heap/1046.py" />
       </list>
     </option>
   </component>
@@ -58,6 +59,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="leetcode" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/study/leetcode" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -68,18 +80,7 @@
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="leetcode" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/study/leetcode" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="heap" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -93,7 +94,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -148,22 +149,23 @@
       <updated>1572861086056</updated>
       <workItem from="1572861088996" duration="2526000" />
       <workItem from="1573018692783" duration="51000" />
-      <workItem from="1573034767875" duration="3503000" />
+      <workItem from="1573034767875" duration="3955000" />
+      <workItem from="1573124027001" duration="212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6080000" />
+    <option name="totallyTimeSpent" value="6744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2160229" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21888413" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.33012047" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.2951807" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" />
@@ -255,8 +257,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stack/844.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="128">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap/1046.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
