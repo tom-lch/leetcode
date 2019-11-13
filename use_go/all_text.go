@@ -47,4 +47,33 @@ func deleteNode(node *ListNode) {
 	node.Val = node.Next.Val
 	node.Next = node.Next.Next
 }
+//1252. 奇数值单元格的数目
+/*
+python
+import numpy as np
+class Solution:
+def oddCells(self, n: int, m: int, indices: List[List[int]]) -> int:
+data = np.zeros((n, m))
+for x, y in indices:
+data[x, :] += 1
+data[:, y] += 1
+return sum(sum(data % 2 == 1))
+*/
+
+//182. 查找重复的电子邮箱
+//select distinct a.Email
+//from Person a, Person b
+//where a.Email = b.Email and a.Id != b.Id
+
+//709. 转换成小写字母
+// go和其他高级语言类似都有 strings.ToLower(str)方法
+func toLowerCase(str string) string {
+	return strings.ToLower(str)
+}
+
+//832. 翻转图像
+//python
+//class Solution:
+//    def flipAndInvertImage(self, A: List[List[int]]) -> List[List[int]]:
+//        return [[j ^ 1 for j in i[::-1]] for i in A]
 
