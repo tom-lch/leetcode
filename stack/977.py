@@ -16,3 +16,15 @@
 class Solution:
     def sortedSquares(self, A: List[int]) -> List[int]:
         return sorted([x*x for x in A])
+
+# go
+'''
+import "sort"
+func sortedSquares(A []int) []int {
+    var L []int
+    for _, i := range A {
+        L = append(L, i*i)
+    }
+    return sort(L)
+}
+'''
