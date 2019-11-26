@@ -77,3 +77,30 @@ func toLowerCase(str string) string {
 //    def flipAndInvertImage(self, A: List[List[int]]) -> List[List[int]]:
 //        return [[j ^ 1 for j in i[::-1]] for i in A]
 
+//1266. 访问所有点的最小时间
+
+func minTimeToVisitAllPoints(points [][]int) int {
+	if len(points) <= 1 {
+		return 0
+	}
+	sum := 0
+	for i := 1; i < len(points); i++ {
+		sum +=  max(abs(points[i][0] - points[i-1][0]), abs(points[i][1] - points[i-1][1]))
+	}
+	return sum
+}
+
+func abs(x int) int {
+	if x < 0 {
+		return -1 * x
+	}
+	return x
+}
+
+func max(x, y int) int {
+	if x >= y {
+		return x
+	}
+	return y
+}
+// 会有bug
