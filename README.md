@@ -273,5 +273,18 @@ func searchBST(root *TreeNode, val int) *TreeNode {
         return searchBST(root.Left, val)
     }
 }
+
+
+1025. 除数博弈
+//这道题有毒
+//限制太少了 如果每个人是真正的随机。那么没有办法进行了，不符合博弈论
+// 而本体中每次都是选1那么偶数先手胜，奇数先手输
+func divisorGame(N int) bool {
+    if N % 2==0 {
+        return true
+    }else {
+        return false
+    }
+}
 `````
 
