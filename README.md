@@ -286,5 +286,25 @@ func divisorGame(N int) bool {
         return false
     }
 }
+
+//942. 增减字符串匹配
+//这种问题不能往复杂想， 怎么简单怎么来
+func diStringMatch(S string) []int {
+    //有题，现将数组按增序排序，在遇到了D就将最后一个元素取出，插入到D序号的位置
+    max_len := len(S)
+    i := 0
+    var list []int
+    for _, j := range S {
+        if j == 'I'{ 
+            list = append(list, i)
+            i++
+        } else {
+            list = append(list, max_len)
+            max_len--
+        }
+    }
+    list = append(list, i)
+    return list
+}
 `````
 
