@@ -223,5 +223,31 @@ func judgeCircle(moves string) bool {
         return false
     }
 }
+
+//104. 二叉树的最大深度
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func maxDepth(root *TreeNode) int {
+    // 使用传统方法，即递归遍历树 1行代码即可
+    if root == nil {
+        return 0
+    }
+    //因为go这个沙雕语言没有重载，所以math库里只有float64的Max
+    return max(maxDepth(root.Right), maxDepth(root.Left)) + 1
+}
+// go的函数返回值的类型是个坑 以后写函数都要写上 避免遗漏出现的大坑
+func max(x int, y int) int {
+    if x >= y{
+        return x
+    } else {
+        return y
+    }
+}
 `````
 
