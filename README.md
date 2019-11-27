@@ -200,5 +200,28 @@ func hammingDistance(x int, y int) int {
     }
     return cont
 }
+
+//657. 机器人能否返回原点
+func judgeCircle(moves string) bool {
+    //使用简单方法及使用标签符来对R-L U-D进行相互抵消
+    //只遍历一遍字符串即可
+    flag0, flag1 := 0, 0
+    for _, i := range moves {
+        if i == 'U'{
+            flag0 ++
+        } else if i == 'D' {
+            flag0 --
+        } else if i == 'R' {
+            flag1 ++
+        } else {
+            flag1 --
+        }
+    }
+    if flag1 == 0 && flag0 == 0{
+        return true
+    } else {
+        return false
+    }
+}
 `````
 
