@@ -306,5 +306,15 @@ func diStringMatch(S string) []int {
     list = append(list, i)
     return list
 }
+// 这是一道憨憨题
+// 292. Nim 游戏
+func canWinNim(n int) bool {
+    //巴什博奕，n%(m+1)!=0时，先手总是会赢的
+    if n % 4 != 0 {
+        return true
+    } else {
+        return false
+    }
+}
 `````
 
