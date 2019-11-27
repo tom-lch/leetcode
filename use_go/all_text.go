@@ -134,3 +134,19 @@ func rangeSumBST(root *TreeNode, L int, R int) int {
 		return root.Val +  rangeSumBST(root.Right, L, R) + rangeSumBST(root.Left, L, R)
 	}
 }
+//1221. 分割平衡字符串
+func balancedStringSplit(s string) int {
+	//解题思路是遍历字符串，然后使用标志符来判断是否分割
+	cont, flag := 0, 0
+	for _, i := range s {
+		if i == 'R'{
+			flag += 1
+		} else {
+			flag -= 1
+		}
+		if flag == 0 {
+			cont += 1
+		}
+	}
+	return cont
+}
