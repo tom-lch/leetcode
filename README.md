@@ -182,5 +182,23 @@ func uniqueMorseRepresentations(words []string) int {
     }
     return len(mk)
 }
+
+461. 汉明距离
+func hammingDistance(x int, y int) int {
+    // 使用python仅一句话 return bin(x^y).count('1')
+    // 本方法使用了01串的按位^或运算
+    // 即可降两个串中不同的位置放在一个串中，之后统计该串中1的个数
+    xor := x^y
+    cont := 0
+    for xor > 0 {
+        // 当该串>0时，判断最后一位，010101 & 1 是否>0。如果串最后一位中含有1 则必然是>0
+        if xor & 1 > 0 {
+            cont ++
+        }
+        //判断完后穿右移一位
+        xor >>= 1 // xor = xor >> 1
+    }
+    return cont
+}
 `````
 
