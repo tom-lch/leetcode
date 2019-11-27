@@ -166,8 +166,21 @@ func flipAndInvertImage(A [][]int) [][]int {
     return B
 }
 
-
-
-
+//804. 唯一摩尔斯密码词
+//简单的
+func uniqueMorseRepresentations(words []string) int {
+    // 遍历字符串数组，在遍历字符串，将每个字符转换成摩尔密码
+    //将组成的摩尔密码放到字典这种，即字典的key唯一来实现去重
+    moer := [26]string {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."}
+    mk := make(map[string]int)
+    for _, word := range words {
+        a := ""
+        for _, i := range word{
+            a += moer[i-'a']
+        }
+        mk[a] = 1
+    }
+    return len(mk)
+}
 `````
 
