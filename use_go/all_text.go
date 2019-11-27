@@ -104,3 +104,33 @@ func max(x, y int) int {
 	return y
 }
 // 会有bug
+//938. 二叉搜索树的范围和
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func rangeSumBST(root *TreeNode, L int, R int) int {
+	// 方法一 ： 使用中序遍历二叉树可以得到root.val的顺序序列从L到R之间的值可以进行计算和
+	//sum := 0
+	//先中序遍历二叉树
+	//List = seartmintree(root)
+	//for _, i := range List{
+	//  if i <=R && i >= L { sum += i}
+	//}
+	//
+	// 方法二： 使用递归来计算
+	if root == nil{
+		return 0
+	}
+	if root.Val < L {
+		return rangeSumBST(root.Right, L, R)
+	} else if root.Val > R {
+		return rangeSumBST(root.Left, L, R)
+	} else {
+		return root.Val +  rangeSumBST(root.Right, L, R) + rangeSumBST(root.Left, L, R)
+	}
+}
