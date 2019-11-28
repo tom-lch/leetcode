@@ -316,5 +316,43 @@ func canWinNim(n int) bool {
         return false
     }
 }
+//852. 山脉数组的峰顶索引
+
+func peakIndexInMountainArray(A []int) int {
+    //扫描一遍数组即可。使用双指针来判断什么时候是下坡
+    i := 0
+    for ;i < len(A);i++{
+        if A[i] > A[i+1]{
+            break
+        }
+    }
+    return i
+}
+
+//557. 反转字符串中的单词 III
+import (
+    "strings"
+)
+func reverseWords(s string) string {
+    //本体的思路是先分割字符串，然后在翻转，使用python很简单即
+    // list = s.split(' ')  return ' '.join([word[::-1] for word in list])
+    // 即 return ' '.join([word[::-1] for word in s.split(' ')])
+    // 使用go go的strings库中有对字符传进行分割的操作
+    var words []string
+    list := strings.Split(s, " ")
+    for _, word :=range list{
+        // 对单个单词进行翻转
+        word = reverseString(word)
+        words = append(words, word)
+    }
+    return strings.Join(words, " ")
+}
+func reverseString(s string) string {
+    runes := []rune(s)
+    for from, to := 0, len(runes)-1; from < to; from, to = from+1, to-1 {
+        runes[from], runes[to] = runes[to], runes[from]
+    }
+    return string(runes)
+}
 `````
 
