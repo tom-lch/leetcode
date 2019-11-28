@@ -354,5 +354,49 @@ func reverseString(s string) string {
     }
     return string(runes)
 }
+//
+61. 数组拆分 I
+import "sort"
+func arrayPairSum(nums []int) int {
+    // 本题其实就是奇数求和的问题
+    //nums.sort()
+    //    return sum(nums[::2])
+    lists := sort.Sort(nums)
+    sum := 0
+    for i:= 0; i < len(nums); i += 2{
+        sum += lists[i]
+    }
+    return sum
+}
+
+
+//344. 反转字符串
+func reverseString(s []byte)  {
+    var i, end int
+    i = 0
+    end = len(s)-1
+    for i < end {
+        s[i], s[end] = s[end], s[i] 
+        i ++
+        end --   
+    }
+}
+
+//905. 按奇偶排序数组
+此题描述太差劲了 
+数组前半部分是偶数 后面是奇数不就结了
+func sortArrayByParity(A []int) []int {
+    // 使用双指针来解决问题
+    var start, end int
+    start = 0
+    end = len(A)-1
+    for start < end {
+        for (start < end && A[start] % 2 == 0) {start ++}
+        for (start < end && A[end] % 2 != 0) {end --}
+        A[start], A[end] = A[end], A[start]
+    }
+    return A
+}
+
 `````
 
