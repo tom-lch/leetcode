@@ -398,5 +398,22 @@ func sortArrayByParity(A []int) []int {
     return A
 }
 
+//500. 键盘行
+使用go太麻烦所以用python实现
+class Solution:
+    def findWords(self, words: List[str]) -> List[str]:
+        s1 = set('qwertyuiop')
+        s2 = set('asdfghjkl')
+        s3 = set('zxcvbnm')
+        re = []
+        for i in words:
+            x = i.lower()
+            setx = set(x)
+            if setx <= s1 or setx <= s2 or setx <= s3:
+                re.append(i)
+
+        return re
+
+
 `````
 
