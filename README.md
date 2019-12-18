@@ -415,5 +415,27 @@ class Solution:
         return re
 
 
+// 1252. 奇数值单元格的数目
+// 模拟 + 空间优化
+// 由于每次操作只会将一行和一列的数增加 1，因此我们可以使用一个行数组 rows 和列数组 cols 分别记录每一行和每一列被增加的次数。对于 indices 中的每一对 [ri, ci]，我们将 rows[ri] 和 cols[ci] 的值分别增加 1。 
+// 在所有操作模拟完毕后，矩阵中位于 (x, y) 位置的数即为 rows[x] + cols[y]。我们遍历矩阵，得到奇数的数目。
+func oddCells(n int, m int, indices [][]int) int {
+    x, y := make([]int, n), make([]int, m)
+    for _, iv := range indices {
+        x[iv[0]] ++
+        y[iv[1]] ++
+    }
+    count := 0
+    for i:=0; i < n; i++ {
+        for j:=0; j<m; j++ {
+            count += (x[i] + y[j]) % 2
+        }
+    }
+    return count
+}
+   
+ 
+
+
 `````
 
