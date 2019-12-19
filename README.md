@@ -501,5 +501,23 @@ func uniqueOccurrences(arr []int) bool {
     }
     return true
 }
+// 1217. 玩筹码
+// 这道题说白了就是移动数字的位置，数字本身代表了一个筹码所在的位置，移动奇数位代价是1，移动偶数位代价是0，所以就是判断数组中的奇数多还是偶数多，返回较少的那个
+func minCostToMoveChips(chips []int) int {
+    even, odd := 0, 0
+    for _, v := range chips {
+        if v % 2 == 0{
+            even++
+        } else {
+            odd++
+        }
+    }
+    if even < odd {
+        return even
+    } else {
+        return odd
+    }
+}
+
 `````
 
