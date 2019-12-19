@@ -519,5 +519,18 @@ func minCostToMoveChips(chips []int) int {
     }
 }
 
+// 908. 最小差值 I
+func smallestRangeI(A []int, K int) int {
+    sort.Ints(A)
+    min := A[0]
+    max := A[len(A)-1]
+    if max - min >= 2 * K {
+        return max-min-2*K
+    } else {
+        return 0
+    }
+}
+// 我实在是无话可说 ，， 这种题理解起来费脑细胞
+
 `````
 
