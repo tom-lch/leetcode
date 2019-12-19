@@ -434,8 +434,37 @@ func oddCells(n int, m int, indices [][]int) int {
     return count
 }
    
+//1051. 高度检查器
+import "sort"
+func heightChecker(heights []int) int {
+    n_arr := make([]int, len(heights))
+    for i:= 0; i < len(n_arr); i++{
+        n_arr[i] = heights[i]
+    }
+    sort.Ints(n_arr)
+    count := 0
+    for i:= 0; i < len(n_arr); i++{
+        if n_arr[i] != heights[i]{
+            count ++
+        }
+    }
+    return count
+}
  
-
+//下面添加上深拷贝吧
+import "sort"
+func heightChecker(heights []int) int {
+    n_arr := make([]int, len(heights))
+    copy(height, n_arr)
+    sort.Ints(n_arr)
+    count := 0
+    for i:= 0; i < len(n_arr); i++{
+        if n_arr[i] != heights[i]{
+            count ++
+        }
+    }
+    return count
+}
 
 `````
 
