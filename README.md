@@ -465,6 +465,41 @@ func heightChecker(heights []int) int {
     }
     return count
 }
+// 1207. 独一无二的出现次数
+// 三次for循环好丢人啊
+func uniqueOccurrences(arr []int) bool {
+    dic := make(map [int]int)
+    for _, i := range arr {
+        dic[i] ++
+    }
+    ar := make([]int, 0)
+    for _, v := range dic {
+        ar = append(ar, v)
+    }
+    sort.Ints(ar)
+    for i:= 0; i < len(ar)-1; i++{
+        if ar[i] == ar[i+1]{
+            return false
+        }
+    }  
+    return true
+}
 
+// 要改进
+// 使用两次遍历，第一次遍历数组，获取每个值出现的次数，第二次是遍历字典的val，将val作为第二个字典的key，如果对应的value>1则返回false即可
+func uniqueOccurrences(arr []int) bool {
+    dic := make(map [int]int)
+    for _, i := range arr {
+        dic[i] ++
+    }
+    aa := make(map [int]int)
+    for _, v := range dic{
+        aa[v]++
+        if aa[v] > 1{
+            return false
+        }
+    }
+    return true
+}
 `````
 
